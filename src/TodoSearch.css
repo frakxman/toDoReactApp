@@ -1,0 +1,30 @@
+.search-input-container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px; /* Ajusta el tamaño según necesites */
+}
+  
+.search-input {
+  width: 100%;
+  padding: 10px 40px; /* Espaciado para el ícono */
+  border: 2px solid white;
+  border-radius: 20px;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+  
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+  
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  pointer-events: none; /* Permite que el input sea clickeable a través del ícono */
+  fill: gray;
+}
