@@ -1,30 +1,33 @@
 .search-input-container {
   position: relative;
-  margin: 0 auto;
+  margin: 0 auto; /* Adjust container spacing from left */
   width: 100%;
-  max-width: 400px; /* Ajusta el tamaño según necesites */
+  max-width: 400px; 
 }
-  
+
 .search-input {
   width: 100%;
-  padding: 10px 40px; /* Espaciado para el ícono */
+  max-width: 300px; 
+  padding: 10px 40px; /* Adds spacing for the icon */
   border: 2px solid white;
   border-radius: 20px;
   background: transparent;
   color: white;
   font-size: 16px;
   outline: none;
+  display: block;
+  margin: 0 auto; /* Centers the input itself */
 }
-  
+
 .search-input::placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
-  
+
 .search-icon {
   position: absolute;
   top: 50%;
-  left: 10px;
+  left: 15px; /* Adjust icon spacing from left */
   transform: translateY(-50%);
-  pointer-events: none; /* Permite que el input sea clickeable a través del ícono */
+  pointer-events: none; /* Allows clicking the input behind the icon */
   fill: gray;
 }

@@ -10,15 +10,26 @@ import { TodoSearch } from './TodoSearch';
 
 const defaultTodos = [
   { text: 'Todo 1', completed: false },
-  { text: 'Todo 2', completed: false },
+  { text: 'Todo 2', completed: true },
   { text: 'Todo 3', completed: false },
+  { text: 'Todo 4', completed: false },
+  { text: 'Todo 5', completed: false },
+  { text: 'Todo 6', completed: false }
 ];
 
 function App() {
+  const [todos, setTodos] = React.useState(defaultTodos);
+  const [searchValue, setSearchValue] = React.useState('');
+
+  
+
   return (
     <>
       <TodoCounter completed={3} total={10}/>
-      <TodoSearch/>
+      <TodoSearch 
+        searchValue={searchValue}
+        setSearchValue={setSearchValue}
+      />
 
       <TodoList>
         {defaultTodos.map(todo => (
