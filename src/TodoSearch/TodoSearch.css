@@ -17,6 +17,7 @@
   outline: none;
   display: block;
   margin: 0 auto; /* Centers the input itself */
+  text-align: right;
 }
 
 .search-input::placeholder {
@@ -26,8 +27,8 @@
 .search-icon {
   position: absolute;
   top: 50%;
-  left: 15px; /* Adjust icon spacing from left */
+  right: 20px; /* Adjust icon spacing from left */
   transform: translateY(-50%);
   pointer-events: none; /* Allows clicking the input behind the icon */
-  fill: gray;
+  fill: white;
 }
