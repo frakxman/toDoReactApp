@@ -1,0 +1,29 @@
+/* Center the loading text */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color: transparent;
+  color: #61dafb;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Typewriter text */
+.typewriter {
+  font-size: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #61dafb;
+  animation: blink 0.8s step-end infinite;
+}
+
+/* Blinking cursor */
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: #61dafb;
+  }
+}
