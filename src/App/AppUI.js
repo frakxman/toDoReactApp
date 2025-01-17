@@ -32,7 +32,7 @@ function AppUI() {
             <TodoList>
                 {loading && <TodosLoading />}
                 {error && searchedTodos.length === 0 && <TodosError />}
-                {!loading && !error && searchedTodos.length === 0 && <EmptyTodos />}
+                {!loading && !error && searchedTodos.length === 0 && <EmptyTodos setOpenModal={setOpenModal} />}
                 {searchedTodos.map(todo => (
                     <TodoItem 
                         key={todo.text} 
