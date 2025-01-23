@@ -1,17 +1,18 @@
 import React from 'react';
 import { useLocalStorage } from './useLocalStorage';
 
-const defaultTodos = [
-  { text: 'Maximun effort when do exersice', completed: false },
-  { text: 'Read, read and read', completed: true },
-  { text: 'Practice English all time', completed: false },
-  { text: 'Continue taking the course of Intro a React.js', completed: false },
-  { text: 'Practice Back-end', completed: true },
-  { text: 'Take and practice design', completed: true },
-  { text: 'Keeping up to date with drone', completed: true },
-];
+// const defaultTodos = [
+//   { text: 'Maximun effort when do exersice', completed: false },
+//   { text: 'Read, read and read', completed: true },
+//   { text: 'Practice English all time', completed: false },
+//   { text: 'Continue taking the course of Intro a React.js', completed: false },
+//   { text: 'Practice Back-end', completed: true },
+//   { text: 'Take and practice design', completed: true },
+//   { text: 'Keeping up to date with drone', completed: true },
+// ];
 
-localStorage.setItem('TODOS_V1', JSON.stringify(defaultTodos));
+// localStorage.setItem('TODOS_V1', JSON.stringify(defaultTodos));
+// localStorage.removeItem('TODOS_V1');
 
 const TodoContext = React.createContext();
 
@@ -96,16 +97,3 @@ function TodoProvider({ children }) {
 }
 
 export { TodoContext, TodoProvider };
-
-// const defaultTodos = [
-//   { text: 'Maximun effort when do exersice', completed: false },
-//   { text: 'Read, read and read', completed: true },
-//   { text: 'Practice English all time', completed: false },
-//   { text: 'Continue taking the course of Intro a React.js', completed: false },
-//   { text: 'Practice Back-end', completed: true },
-//   { text: 'Take and practice design', completed: true },
-//   { text: 'Keeping up to date with drone', completed: true },
-// ];
-
-// localStorage.setItem('TODOS_V1', JSON.stringify(defaultTodos));
-// localStorage.removeItem('TODOS_V1');
